@@ -1,0 +1,11 @@
+build]
+# This tells Netlify to change into the SchoolConnect directory before running commands
+base = "SchoolConnect" 
+# The command to build the Next.js app 
+command = "npm run build"
+# The folder where the built Next.js app ends up
+publish = ".next" 
+
+# This ensures Netlify uses the correct adapter for Next.js 14
+[[plugins]]
+package = "@netlify/plugin-nextjs"
